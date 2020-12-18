@@ -737,6 +737,12 @@ footer {
   .grid-products-3 {
     grid-template-columns: repeat(1, 1fr);
   }
+  .gallery-top {
+    height: 70%;
+  }
+  .gallery-thumbs {
+    height: 15%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -749,6 +755,12 @@ footer {
   .footer-container h5 {
     margin-top: 3rem;
   }
+  .change-order {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap-reverse;
+  }
+
   .our-mission-content {
     width: 95%;
   }
@@ -761,5 +773,17 @@ footer {
   }
   .slider {
     max-height: 70vh;
+  }
+  .gallery-top {
+    height: 75%;
+  }
+  .gallery-thumbs {
+    height: 25%;
+  }
+  .product-images {
+    height: 50vh;
+  }
+  .product-description {
+    margin-top: 5rem;
   }
 }
