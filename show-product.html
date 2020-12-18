@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Raleway&display=swap" rel="stylesheet">
+    <!-- Css Styles-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <!-- slider style -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header class="index-header">
+        <img src="img/logo.png" alt="">
+
+        <ul class="navbar">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About us</a>
+            </li>
+
+            <li>
+                <a href="#">Services</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="repair.html">Repair</a>
+                    </li>
+                    <li>
+                        <a href="delivery.html">Delivery</a>
+                    </li>
+                </ul>
+
+            </li>
+
+
+            <li>
+                <a href="products.html">Products</a>
+            </li>
+
+            <li>
+                <a href="testimonials.html">Testimonials</a>
+            </li>
+
+            <li>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact us</a>
+            </li>
+        </ul>
+    </header>
+    <!--End header-->
+    <main class="container padding-t-7 margin-t-2 show-product">
+        <div class="product-images">
+
+            <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./img/product-1.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-2.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-3.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-4.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-5.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-6.png)"></div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+            </div>
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url(./img/product-1.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-2.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-3.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-4.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-5.png)"></div>
+                    <div class="swiper-slide" style="background-image:url(./img/product-6.png)"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="product-description">
+            <h1>5740 FWA Montana</h1>
+            <h3>$26,900.00</h3>
+            <button class="btn btn-blue">Make an enquiry for this product</button>
+        </div>
+    </main>
+    <div class="container description">
+        <h5>Description</h5>
+        <ul>
+            <li>60hp Diesel engine</li>
+            <li>1100 hours</li>
+            <li>Quick attach Loader</li>
+            <li>Joystick</li>
+            <li>Cab with heat and A/C</li>
+            <li>3 point hitch</li>
+            <li>540 pto</li>
+            <li>2008</li>
+
+        </ul>
+    </div>
+
+    <!-- slide script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 5,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            }
+        });
+    </script>
+
+
+
+    <!--  footer -->
+    <footer>
+        <div class="footer-container container">
+            <div>
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="footer-navigation">
+                <h5>Navigation</h5>
+                <ul class="margin-t-2">
+                    <li> <a href="#">About us </a> </li>
+                    <li> <a href="#">Service</a> </li>
+                    <li> <a href="#">Products</a> </li>
+                    <li> <a href="#">Delivery</a> </li>
+                    <li> <a href="#">Testimonials</a> </li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+
+                <h5>Contact us</h5>
+                <ul class="margin-t-2">
+                    <li> <span class="text-bold"> Address:</span> 3138 township road 324 Olds, AB T4H1P3</li>
+                    <li> <span class="text-bold">Phone:</span> (403)-397-81-97</li>
+                    <li><span class="text-bold">Email:</span> joestractorshop@gmail.com</li>
+                </ul>
+
+                <h5 class="margin-t-3">Follow Us</h5>
+                <div class="social-networks">
+                    <a href="">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+</body>
+
+</html>

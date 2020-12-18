@@ -58,25 +58,36 @@
     </header>
     <!--End header-->
 
-    <section class="grid-2 container new-section margin-t-3 padding-t-7">
+    <section class="contact container new-section margin-t-3 padding-t-7">
         <div>
             <h1 class="title-h1">Contact us</h1>
-
             <form class="margin-t-3" action="">
                 <div class="form-group">
-                    <input class="form-control" type="text" name="name" id="" placeholder="Your name">
+                    <input class="form-control" type="text" name="name" id="" required>
+                    <label class="label-name" for="name">
+                        <span class="text-name">Name: </span>
+                    </label>
                 </div>
 
                 <div class="form-group">
-                    <input class="form-control" type="number" name="phone" id="" placeholder="Your phone number">
+                    <input class="form-control" type="tel" name="phone" id="" required>
+                    <label class="label-name" for="phone">
+                        <span class="text-name">Phone: </span>
+                    </label>
                 </div>
 
                 <div class="form-group">
-                    <input class="form-control" type="email" name="email" id="" placeholder="Your email">
+                    <input class="form-control" type="email" name="email" id="" required>
+                    <label class="label-name" for="email">
+                        <span class="text-name">Email: </span>
+                    </label>
                 </div>
 
-                <div>
-                    <textarea name="question" id="" placeholder="Ask your question"></textarea>
+                <div class="form-group">
+                    <textarea name="question" class="form-control" id="" required></textarea>
+                    <label class="label-name" for="question">
+                        <span class="text-name">Ask: </span>
+                    </label>
                 </div>
 
                 <button class="btn btn-blue margin-t-3 ">Submit</button>
@@ -90,6 +101,7 @@
                 <p> <span class="text-bold">Phone :</span>(403)-397-8197</p>
                 <p> <span class="text-bold">Email :</span>joestractorshop@gmail.com</p>
             </div>
+        </div>
     </section>
 
 
