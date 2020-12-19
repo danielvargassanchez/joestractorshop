@@ -700,6 +700,7 @@ footer {
     top: 7rem;
     text-align: center;
     flex-direction: column;
+    overflow: scroll;
     transition: all 0.4s;
   }
   .show {
