@@ -627,6 +627,9 @@ blockquote .testimonial-description {
   color: var(--blue);
   resize: none;
 }
+.form-control:focus {
+  outline: none;
+}
 .label-name .text-name {
   position: absolute;
   background-color: white;
@@ -634,7 +637,6 @@ blockquote .testimonial-description {
 .text-name {
   top: 1rem;
   left: 2rem;
-  padding: 0 0.5rem;
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.7);
   transition: all 0.3s;
@@ -791,6 +793,9 @@ footer {
   }
   .gallery-thumbs {
     height: 15%;
+  }
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
