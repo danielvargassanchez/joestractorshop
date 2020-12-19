@@ -809,7 +809,6 @@ footer {
     flex-direction: column;
     flex-flow: row wrap-reverse;
   }
-
   .our-mission-content {
     width: 95%;
   }
@@ -818,10 +817,11 @@ footer {
     font-size: 3rem;
   }
   .slider .container h2 {
+    top: 40%;
     padding-left: 1rem;
   }
   .slider {
-    max-height: 70vh;
+    max-height: 60vh;
   }
   .gallery-top {
     height: 75%;
