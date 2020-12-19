@@ -717,7 +717,6 @@ footer {
   }
 
   .navbar a:hover {
-    background-color: none;
     font-size: 2rem;
     color: white;
     font-weight: bold;

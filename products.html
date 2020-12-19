@@ -198,6 +198,15 @@
     <!-- End footer -->
 
     <script src="javascript/app.js"></script>
+    <script>
+        var categoriesContainer = document.getElementById("filter-by-categorie");
+        var btnCategories = document.getElementById("show-categories");
+
+        btnCategories.addEventListener("click", () => {
+            categoriesContainer.classList.toggle("hide");
+            btnCategories.classList.toggle("down-button");
+        });
+    </script>
 </body>
 
 </html>
