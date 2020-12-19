@@ -188,6 +188,13 @@ ul li {
 .navbar {
   display: flex;
 }
+#btn-menu {
+  cursor: pointer;
+  display: none;
+}
+#btn-menu:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
 .index-header ul li a {
   text-decoration: none;
   position: relative;
@@ -195,6 +202,7 @@ ul li {
   font-weight: bold;
   text-transform: uppercase;
   padding: 1.2rem;
+  display: block;
 }
 .index-header ul li a:hover {
   background-color: var(--red);
@@ -214,7 +222,6 @@ ul li {
   display: inline-block;
   width: 100%;
 }
-
 /*slider*/
 .slider {
   width: 100%;
@@ -662,7 +669,7 @@ footer {
 }
 .footer-navigation ul li {
   padding: 1rem 0;
-  border-bottom: 0.1rem solid black;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
 }
 .footer-navigation ul li a {
   color: black;
@@ -680,6 +687,42 @@ footer {
 /* --------MEDIA QUERIES------------- */
 
 @media (max-width: 1024px) {
+  #btn-menu {
+    display: inline-block;
+    font-size: 2rem;
+  }
+  .navbar {
+    position: fixed;
+    left: -100%;
+    width: 100vw;
+    height: calc(100% - 3rem);
+    background-color: rgba(222, 222, 222, 0.9);
+    top: 7rem;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.4s;
+  }
+  .show {
+    left: 0;
+  }
+  .navbar li {
+    margin: 0 0 0 0;
+    line-height: 3rem;
+  }
+  .navbar .submenu {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+  }
+
+  .navbar a:hover {
+    background-color: none;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+  }
+
   .slider .container h2,
   .slider .container h1 {
     font-size: 6rem;
@@ -692,9 +735,6 @@ footer {
   }
   .grid-products-3 {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .contact {
-    display: block;
   }
   .contact div:first-child {
     margin-bottom: 3rem;
@@ -712,6 +752,15 @@ footer {
   }
   .description {
     margin-top: 2rem;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .navbar li {
+    margin: 0;
+  }
+  .navbar {
+    overflow: scroll;
   }
 }
 
